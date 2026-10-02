@@ -1,0 +1,14 @@
+{
+  "consigne": "Prédire les résultats à partir du contrat avant d'exécuter. Ajouter un cas original par personne.",
+  "numeriques": [
+    [0, 0],
+    [0, 4],
+    [3, 4],
+    [4, 4],
+    [5, 4],
+    [-1, 4],
+    [0, -1],
+    [1, 3]
+  ],
+  "noms": ["ALICE", " ALICE ", "Anne Marie", "", "   "]
+}

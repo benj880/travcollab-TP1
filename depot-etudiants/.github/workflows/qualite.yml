@@ -1,0 +1,26 @@
+name: Qualite
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verification:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Tester et generer la documentation
+        run: python tools/build_docs.py
+      - name: Conserver la documentation
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation-${{ github.sha }}
+          path: build/documentation.html
+          if-no-files-found: error
+          retention-days: 14
