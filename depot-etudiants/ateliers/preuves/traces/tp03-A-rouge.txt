@@ -1,0 +1,67 @@
+test_capacite_negative (tests.test_mission_a.TestMissionA.test_capacite_negative) ... FAIL
+test_capacite_nulle_refuse (tests.test_mission_a.TestMissionA.test_capacite_nulle_refuse) ... FAIL
+test_derniere_place_prise (tests.test_mission_a.TestMissionA.test_derniere_place_prise) ... FAIL
+test_evenement_plein_refuse (tests.test_mission_a.TestMissionA.test_evenement_plein_refuse) ... FAIL
+test_evenement_vide (tests.test_mission_a.TestMissionA.test_evenement_vide) ... ok
+test_inscrits_negatifs (tests.test_mission_a.TestMissionA.test_inscrits_negatifs) ... FAIL
+test_inscrits_superieurs_capacite (tests.test_mission_a.TestMissionA.test_inscrits_superieurs_capacite) ... FAIL
+test_place_disponible (tests.test_mission_a.TestMissionA.test_place_disponible) ... ok
+
+======================================================================
+FAIL: test_capacite_negative (tests.test_mission_a.TestMissionA.test_capacite_negative)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\simon\OneDrive\Documents\GitHub\travcollab-TP1\depot-etudiants\tests\test_mission_a.py", line 33, in test_capacite_negative
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_capacite_nulle_refuse (tests.test_mission_a.TestMissionA.test_capacite_nulle_refuse)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\simon\OneDrive\Documents\GitHub\travcollab-TP1\depot-etudiants\tests\test_mission_a.py", line 17, in test_capacite_nulle_refuse
+    self.assertIs(peut_inscrire(0, 0), False)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_derniere_place_prise (tests.test_mission_a.TestMissionA.test_derniere_place_prise)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\simon\OneDrive\Documents\GitHub\travcollab-TP1\depot-etudiants\tests\test_mission_a.py", line 21, in test_derniere_place_prise
+    self.assertIs(peut_inscrire(1, 1), False)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_evenement_plein_refuse (tests.test_mission_a.TestMissionA.test_evenement_plein_refuse)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\simon\OneDrive\Documents\GitHub\travcollab-TP1\depot-etudiants\tests\test_mission_a.py", line 14, in test_evenement_plein_refuse
+    self.assertIs(peut_inscrire(4, 4), False)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not False
+
+======================================================================
+FAIL: test_inscrits_negatifs (tests.test_mission_a.TestMissionA.test_inscrits_negatifs)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\simon\OneDrive\Documents\GitHub\travcollab-TP1\depot-etudiants\tests\test_mission_a.py", line 25, in test_inscrits_negatifs
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+======================================================================
+FAIL: test_inscrits_superieurs_capacite (tests.test_mission_a.TestMissionA.test_inscrits_superieurs_capacite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\simon\OneDrive\Documents\GitHub\travcollab-TP1\depot-etudiants\tests\test_mission_a.py", line 29, in test_inscrits_superieurs_capacite
+    with self.assertRaises(ValueError):
+         ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+AssertionError: ValueError not raised
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.006s
+
+FAILED (failures=6)

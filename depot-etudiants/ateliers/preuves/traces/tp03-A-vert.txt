@@ -1,0 +1,17 @@
+test_inscription_nominale (test_campus.TestCampus.test_inscription_nominale) ... ok
+test_nom_nominal (test_campus.TestCampus.test_nom_nominal) ... ok
+test_places_nominales (test_campus.TestCampus.test_places_nominales) ... ok
+test_taux_nominal (test_campus.TestCampus.test_taux_nominal) ... ok
+test_capacite_negative (test_mission_a.TestMissionA.test_capacite_negative) ... ok
+test_capacite_nulle_refuse (test_mission_a.TestMissionA.test_capacite_nulle_refuse) ... ok
+test_derniere_place_prise (test_mission_a.TestMissionA.test_derniere_place_prise) ... ok
+test_evenement_plein_refuse (test_mission_a.TestMissionA.test_evenement_plein_refuse) ... ok
+test_evenement_vide (test_mission_a.TestMissionA.test_evenement_vide) ... ok
+test_inscrits_negatifs (test_mission_a.TestMissionA.test_inscrits_negatifs) ... ok
+test_inscrits_superieurs_capacite (test_mission_a.TestMissionA.test_inscrits_superieurs_capacite) ... ok
+test_place_disponible (test_mission_a.TestMissionA.test_place_disponible) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.000s
+
+OK
