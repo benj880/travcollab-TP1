@@ -15,3 +15,45 @@ Format : constat, impact, proposition, test attendu. Signaler si le commentaire 
 L'auteur ne valide pas sa propre PR. Une coche verte ne prouve pas l'exhaustivité des tests.
 Résoudre une conversation ne remplace pas la correction du code.
 En cas de désaccord, revenir aux critères de l'issue et faire trancher un troisième membre.
+
+# Convention des Pull Requests
+
+## Titre
+
+Format : `type(cible): résumé court à l'impératif`
+
+Types : `feat`, `fix`, `refactor`, `docs`, `test`, `chore`
+
+Exemples :
+
+- `feat(panier): ajoute le calcul des frais de port`
+- `fix(auth): corrige le bouton de connexion sur Safari`
+
+## Description
+
+```
+## Contexte
+Pourquoi ce changement ? (1 à 2 phrases)
+
+## Changements
+- Ce qui a été modifié, en quelques points
+
+## Issue liée
+Closes #...
+
+## Comment tester
+1. Étapes pour vérifier le changement
+
+## Checklist
+- [ ] Les tests passent
+- [ ] La documentation est à jour si nécessaire
+- [ ] Aucun code mort ou de débogage
+```
+
+## Règles
+
+- Une PR = un sujet. Elle reste petite.
+- Une PR est liée à une issue.
+- Une approbation minimum est nécessaire avant la fusion.
+- L'auteur répond à tous les commentaires de relecture.
+- La PR en cours de travail est ouverte en **Draft**.
